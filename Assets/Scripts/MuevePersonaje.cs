@@ -24,7 +24,6 @@ public class MuevePersonaje : MonoBehaviour
         //Inicializo el Rigidbody y el Animator
         rb = GetComponent<Rigidbody2D>();
         
-        
     }
 
     void FixedUpdate()
@@ -38,9 +37,8 @@ public class MuevePersonaje : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
-        
         animator.SetBool("IsGrounded", isGrounded);
-
+        // Condiciones para voltear al personaje
         if (movimientoX < 0.0f && facingRight)
         {
             FlipPlayer();
@@ -50,13 +48,14 @@ public class MuevePersonaje : MonoBehaviour
         {
             FlipPlayer();
         }
-
+        // Condiciones para el salto
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             Jump();
         }
     }
 
+    // Voltear al personaje segun se mueva derecha o izquierda
     void FlipPlayer()
     {
         facingRight = !facingRight;
@@ -65,10 +64,10 @@ public class MuevePersonaje : MonoBehaviour
         transform.localScale = playerScale;
     }
 
+    // Metodo de salto
     void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
-        
     }
 
 
