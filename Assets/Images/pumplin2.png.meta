@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a310f553c85799046be791661a85c765
+guid: ee52557cb552b724c87a2fc059e2edaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5230130588904096744
-    second: pumplin_0
+      213: -5872681351938644511
+    second: pumplin2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pumplin_0
+      name: pumplin2_0
       rect:
         serializedVersion: 2
         x: 22
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81c777790f7da67b0800000000000000
-      internalID: -5230130588904096744
+      spriteID: 1e5e2aadc6b008ea0800000000000000
+      internalID: -5872681351938644511
       vertices: []
       indices: 
       edges: []
