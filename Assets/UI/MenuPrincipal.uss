@@ -23,3 +23,10 @@
 .boton-juego:hover {
     scale: 1.15 1.15;
 }
+
+.texto {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    white-space: pre-wrap;
+}

@@ -21,6 +21,7 @@ public class MenuController : MonoBehaviour
 
         // Callbacks
         Jugar.RegisterCallback<ClickEvent, String>(IniciarJuego, "SampleScene" );
+        Ayuda.RegisterCallback<ClickEvent, String>(IniciarJuego, "EscenaAyuda" );
     }
 
     private void IniciarJuego(ClickEvent evt, String escena)
