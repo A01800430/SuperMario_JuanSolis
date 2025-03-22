@@ -13,12 +13,11 @@ public class MueveInputAction : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         moveAction.Enable();
-        rb.gravityScale = 20;
     }
 
     void FixedUpdate()
     {
         Vector2 move = moveAction.ReadValue<Vector2>();
-        rb.MovePosition(rb.position + move * SPEED * Time.fixedDeltaTime);
+        transform.position = (Vector2)transform.position + move * SPEED * Time.deltaTime;
     }
 }

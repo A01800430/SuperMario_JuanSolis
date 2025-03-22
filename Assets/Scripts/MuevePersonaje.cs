@@ -68,7 +68,7 @@ public class MuevePersonaje : MonoBehaviour
     void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
-        rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+        
     }
 
 
